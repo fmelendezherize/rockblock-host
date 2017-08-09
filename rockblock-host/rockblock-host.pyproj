@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2cac838a-5b12-4a1a-9c80-6a167a8e6ac2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>rockblock_host.py</StartupFile>
+    <StartupFile>runserver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="rockblock_host.py" />
+    <Compile Include="host\rockblock_host.py" />
+    <Compile Include="host\views.py" />
+    <Compile Include="host\__init__.py" />
+    <Compile Include="runserver.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="..\..\..\..\flask-env\">
@@ -34,6 +37,11 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X86</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="host\" />
+    <Folder Include="host\static\" />
+    <Folder Include="host\templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
