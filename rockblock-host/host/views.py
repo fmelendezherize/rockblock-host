@@ -1,5 +1,6 @@
 from .rockblock_host import app
 from flask import request
+import struct
 
 @app.route('/', methods=['GET','POST'])
 def index():
@@ -22,6 +23,12 @@ def index():
         if 'iridium_cep' in request.form:
             iridium_cep = request.form['iridium_cep']
             print "post iridium_cep %s" % iridium_cep
+        if 'data' in request.form:
+            data = request.form['data'].decode("hex")
+            decoded_data = struct.unpack('< B B B B B', data)
+            print type(decoded_data)
+            print decoded_data
+            print list(decoded_data)
 
         return '', 200
     else:
