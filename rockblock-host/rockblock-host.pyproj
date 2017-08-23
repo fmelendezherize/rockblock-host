@@ -22,7 +22,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="host\rockblock_host.py" />
     <Compile Include="host\views.py" />
     <Compile Include="host\__init__.py" />
     <Compile Include="runserver.py" />
@@ -40,8 +39,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="host\" />
+    <Folder Include="host\tmp\" />
     <Folder Include="host\static\" />
     <Folder Include="host\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="host\templates\base.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="host\templates\index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="host\templates\sat_panel.html">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

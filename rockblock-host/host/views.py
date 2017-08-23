@@ -1,5 +1,5 @@
-from .rockblock_host import app
-from flask import request
+from host import app
+from flask import request, render_template
 import struct
 
 @app.route('/', methods=['GET','POST'])
@@ -32,5 +32,9 @@ def index():
 
         return '', 200
     else:
-        return 'Index Page'
+        return render_template("index.html")
+
+@app.route('/sat-panel')
+def sat_panel():
+    return render_template("sat_panel.html")
 
