@@ -22,8 +22,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="host\views.py" />
-    <Compile Include="host\__init__.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="config.py" />
+    <Compile Include="db_create.py" />
+    <Compile Include="db_migrate.py" />
+    <Compile Include="db_repository\versions\001_migration.py" />
+    <Compile Include="db_repository\versions\002_migration.py" />
+    <Compile Include="db_repository\versions\003_migration.py" />
+    <Compile Include="db_repository\versions\004_migration.py" />
+    <Compile Include="db_repository\versions\005_migration.py" />
+    <Compile Include="db_repository\versions\__init__.py" />
+    <Compile Include="db_upgrade.py" />
     <Compile Include="runserver.py" />
   </ItemGroup>
   <ItemGroup>
@@ -38,21 +49,24 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="host\" />
-    <Folder Include="host\tmp\" />
-    <Folder Include="host\static\" />
-    <Folder Include="host\templates\" />
+    <Folder Include="db_repository\" />
+    <Folder Include="app\" />
+    <Folder Include="app\tmp\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="db_repository\versions\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="host\templates\base.html">
+    <Content Include="app\templates\base.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="host\templates\index.html">
+    <Content Include="app\templates\index.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="host\templates\sat_panel.html">
+    <Content Include="app\templates\sat_panel.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>IMEI</th>
+            <th>MOMSN</th>
+            <th>Transmit Time</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>CEP</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if  sat_messages %}
+        {% for message in sat_messages %}
+        <tr>
+            <th scope="row">{{ message.id }}</th>
+            <td>{{ message.imei }}</td>
+            <td>{{ message.momsn }}</td>
+            <td>{{ message.transmit_time }}</td>
+            <td>{{ message.iridium_latitude }}</td>
+            <td>{{ message.iridium_longitude }}</td>
+            <td>{{ message.iridium_cep }}</td>
+            <td>{{ message.data }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+{% endblock %}
