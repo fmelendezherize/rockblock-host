@@ -1,6 +1,7 @@
 from app import db
 
-class Satellite_Message(db.Model):
+class SatelliteMessage(db.Model):
+    __tablename__ = "SatelliteMessage"
     id = db.Column(db.Integer, primary_key=True)
     imei = db.Column(db.String(240), nullable=True)
     momsn = db.Column(db.String(240), nullable=True)

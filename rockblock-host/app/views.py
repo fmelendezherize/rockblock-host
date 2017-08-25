@@ -9,7 +9,7 @@ def index():
 @app.route('/api/sat', methods=['GET','POST'])
 def sat_api():
     if request.method == 'POST':
-        sat_message = models.Satellite_Message()
+        sat_message = models.SatelliteMessage()
         if 'imei' in request.form:
             imei = request.form['imei']
             sat_message.imei = imei
@@ -50,7 +50,7 @@ def sat_api():
 
 @app.route('/sat-panel')
 def sat_panel():
-    sat_messages = models.Satellite_Message.query.order_by(models.Satellite_Message.id.desc()).all()
+    sat_messages = models.SatelliteMessage.query.order_by(models.SatelliteMessage.id.desc()).all()
     return render_template("sat_panel.html",
                            sat_messages = sat_messages)
 

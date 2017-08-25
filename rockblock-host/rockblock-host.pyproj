@@ -28,12 +28,6 @@
     <Compile Include="config.py" />
     <Compile Include="db_create.py" />
     <Compile Include="db_migrate.py" />
-    <Compile Include="db_repository\versions\001_migration.py" />
-    <Compile Include="db_repository\versions\002_migration.py" />
-    <Compile Include="db_repository\versions\003_migration.py" />
-    <Compile Include="db_repository\versions\004_migration.py" />
-    <Compile Include="db_repository\versions\005_migration.py" />
-    <Compile Include="db_repository\versions\__init__.py" />
     <Compile Include="db_upgrade.py" />
     <Compile Include="runserver.py" />
   </ItemGroup>
@@ -49,12 +43,10 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="db_repository\" />
     <Folder Include="app\" />
     <Folder Include="app\tmp\" />
     <Folder Include="app\static\" />
     <Folder Include="app\templates\" />
-    <Folder Include="db_repository\versions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\templates\base.html">
