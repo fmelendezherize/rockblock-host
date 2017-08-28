@@ -30,6 +30,9 @@
     <Compile Include="db_migrate.py" />
     <Compile Include="db_upgrade.py" />
     <Compile Include="runserver.py" />
+    <Compile Include="tests.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="..\..\..\..\flask-env\">
@@ -44,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
-    <Folder Include="app\tmp\" />
     <Folder Include="app\static\" />
     <Folder Include="app\templates\" />
   </ItemGroup>

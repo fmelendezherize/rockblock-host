@@ -1,0 +1,76 @@
+2017-08-28 12:10:18,316 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 12:10:36,688 ERROR: Exception on /sat-panel [GET] [in C:\Programas\flask-env\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Programas\workspace\python\rockblock-host\rockblock-host\app\views.py", line 54, in sat_panel
+    raise Exception('I know Python!') # don't, if you catch, likely to hide bugs.
+Exception: I know Python!
+2017-08-28 12:13:13,305 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 12:13:18,223 ERROR: Exception on /api/sat [POST] [in C:\Programas\flask-env\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Programas\flask-env\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Programas\workspace\python\rockblock-host\rockblock-host\app\views.py", line 45, in sat_api
+    raise Exception('I know Python!') # don't, if you catch, likely to hide bugs.
+Exception: I know Python!
+2017-08-28 13:19:27,637 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 13:23:40,855 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 13:23:58,976 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 13:24:47,924 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:36:04,861 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:38:51,752 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:39:07,358 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:39:50,970 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:40:29,785 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:42:09,176 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:42:31,716 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:42:49,744 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:43:23,381 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:43:39,142 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:44:26,414 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:46:03,980 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:46:42,865 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:50:31,148 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:50:45,102 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:50:59,338 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:51:15,953 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:54:32,213 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:55:05,362 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:55:39,546 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 15:56:00,930 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:04:14,437 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:06:57,275 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:37:22,951 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:42:26,829 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:45:19,443 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:46:13,782 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:50:10,914 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 16:51:39,276 INFO: Romaeris host startup [in .\app\__init__.py:16]
+2017-08-28 17:12:45,756 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:16:08,677 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:16:41,131 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:17:07,608 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:17:21,348 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:18:09,671 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:18:10,548 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:18:41,223 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:18:41,680 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:19:12,157 INFO: Romaeris host startup [in C:\Programas\workspace\python\rockblock-host\rockblock-host\app\__init__.py:16]
+2017-08-28 17:28:14,381 INFO: Romaeris host startup [in .\app\__init__.py:16]
